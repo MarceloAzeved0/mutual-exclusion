@@ -12,7 +12,7 @@ public class Coordinator extends Thread {
 
   public Coordinator() {
     try {
-      this.datagramSocket = new DatagramSocket(4500);
+      this.datagramSocket = new DatagramSocket(6000);
       buffer = new byte[4096];
     } catch (SocketException e) {
       e.printStackTrace();
